@@ -1,0 +1,18 @@
+note over browser:
+upon submit, event handler is triggered which
+creates new note, adds it to notes array,
+and sends the new note to the server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+note is sent to server as JSON data
+end note
+
+server-->browser: HTTP status code 201 created
+
+note over browser:
+the browser dynamically rerenders the list with JS
+without reloading the page
+end note
